@@ -23,7 +23,7 @@ const Orders = ({listOrders}) => {
                                     <div className="detail-cont">
                                         <p><b>Total: </b>{numberFormat2.format(item.total)}</p>
                                         <p><b>Telefono: </b>{item.phone}</p>
-                                        <p><b>Descripcion: </b>{item.description}</p>
+                                        <p className="descrip"><b>Descripcion: </b>{item.description}</p>
                                         <p><b>Ingredientes: </b>{item.detail?.map(ingredient => ingredient.name + ", ")}</p>
                                     </div>
                                 </Accordion.Body>
