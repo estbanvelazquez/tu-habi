@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+.main-card.data-clients{
+    .card-body{
+        form{
+            max-width: 600px;
+            margin: 0 auto;
+            h3{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            p{
+                margin: 0;
+                margin-top: 5px;
+                color: red;
+            }
+            input{
+                border-color: $primary-color;
+            }
+            button{
+                display: block;
+                max-width: 400px;
+                margin: 0 auto;
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+.item-card{
+    width: 150px;
+    margin: 0 10px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: .5s ease;
+    cursor:pointer;
+    button{
+        border:0;
+        padding: 5px;
+        background-color: $secondary-color;
+        color: white;
+        border-radius: 10px;
+        font-weight: 900;
+        padding: 5px 10px;
+    }
+    p{
+        margin: 0;
+        color: white;
+    }
+    .info-cont{
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        .ico-check{
+            height: 15px;
+            width: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border:1px solid white;
+            margin-right: 10px;
+            font-size: 10px;
+            color: $primary-font-color;
+            font-weight: 900;
+            border-radius: 5px;
+        }
+        .ico-check.fill{
+            background-color: $secondary-color;
+        }
+        .description{
+            width: 100%;
+        }
+    }
+    &:hover{
+        transform: translatex(5px);
+    }
+}
+@media(max-width:576px){
+    .item-card{
+        width: 100px;
+        p{
+            font-size: 9px;
+        }
+    }
+}

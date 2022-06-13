@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.main-card.orders {
+    margin-top: 30px;
+
+    .head-card {
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .card-body {
+
+        >p {
+            text-align: center;
+        }
+
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    button {
+                        position: relative;
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: $primary-color;
+
+                        span {
+                            margin: 0 30px;
+                            color: $secondary-font-color;
+                        }
+
+                        &:after {
+                            position: absolute;
+                            right: 10px;
+                            color: $secondary-font-color;
+                            filter: brightness(10);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    .main-card.orders {
+    
+        .card-body {
+            .accordion {
+                .accordion-item {
+                    .accordion-header {
+                        button {
+                            display: flex;
+                            flex-wrap: wrap;
+                            span {
+                                flex: 0 0 100%;
+                                margin: 0;
+                                font-size: 10px;
+                                span{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

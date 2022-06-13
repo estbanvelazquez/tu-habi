@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+.custom-alert{
+    .modal-header{
+        border:0;
+    }
+    .modal-body{
+        text-align: center;
+        .ico-cont{
+            color:$secondary-color;
+            font-size: 60px;
+        }
+        .ico-cont2{
+            color: red;
+            font-size: 60px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+$primary-color: #6301cc;
+$primary-color-light: #8c51ca;
+$secondary-color:  #00f2c2;
+
+$primary-font-color: black;
+$secondary-font-color: white;
+
+
+.img-cont{
+    img{
+        width: 100%;
+    }
+}
+.btn1-style{
+    text-align: center;
+    background-color: $secondary-color;
+    color: $primary-font-color;
+    font-weight: 900;
+    border:0;
+}
