@@ -28,7 +28,7 @@ const Clients = ({saveOrder, alert}) => {
                                 message: "Se requieren almenos 15 caracteres"
                             },
                             pattern: {
-                              value: /^[A-Za-z]+$/,
+                              value: /^[a-zA-Z\s]*$/,
                               message: "El nombre solo debe contener letras"
                             }
                           }) }/>
